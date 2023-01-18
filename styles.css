@@ -3,50 +3,77 @@
   src: url("./assets/LinearBeam05.eot") format("eot");
   src: url("./assets/Linebeam.ttf") format("truetype"), url("./assets/LinearBeam05.svg") format("svg"), url("./assets/LinearBeam05.woff") format("woff"), url("./assets/LinearBeam05.woff2") format("woff2");
 }
+/* Colours
+
+- Dark Purple: #240a31 
+- Orange: #fe7e3f 
+
+Text Shadow: 
+  text-shadow: 10px 0 rgb(53, 236, 16), 0 1px rgb(53, 236, 16),
+    10px 0 rgb(12, 215, 241), 0 2px black;
+
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #230d47;
 }
 
 body {
-  font-family: "LinearBeam";
+  font-family: "LinearBeam", sans-serif;
+}
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #62146b 70%, #fe7e3f 30%);
+  background-position: top;
+}
+
+.header {
+  height: 20vh;
+  position: relative;
+  vertical-align: middle;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.socials {
+  height: 40px;
 }
 
 a {
   text-decoration: none;
-  color: white;
-}
-
-.a,
-nav {
-  position: relative;
-  z-index: 0;
 }
 
 .pages {
-  color: black;
+  color: #240a31;
+  letter-spacing: -2px;
 }
 
-nav {
+ul,
+.logo-box {
+  position: absolute;
+  top: 40px;
+  right: 40px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-right: 40px;
-  font-size: 26px;
 }
 
-.logo {
-  margin-left: 30px;
-  font-size: 80px;
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .name {
   margin-left: 10%;
   font-size: 120px;
-  margin-top: 10%;
+  margin-top: 7%;
+  letter-spacing: -10px;
 }
 
 .sub_title {
@@ -58,20 +85,41 @@ nav ul li {
   vertical-align: middle;
   list-style-type: none;
   display: inline-block;
-  align-items: center;
   padding: 10px;
 }
 
-img {
-  height: 40px;
+.socials {
+  transform: translateY(-18px);
 }
 
-.block {
-  background-color: #fe7e3f;
-  float: right;
-  height: 100vh;
-  width: 40vw;
+.text-box {
+  position: absolute;
+  left: 5%;
+  width: 50%;
+}
+
+.heading-primary-main {
+  display: block;
+  font-weight: normal;
+  font-size: 6.5em;
+  color: #fe7e3f;
+  text-shadow: 10px 0 rgb(236, 229, 16), 20px 0 rgb(12, 215, 241);
+}
+
+.heading-primary-sub {
+  display: block;
   position: relative;
-  z-index: 0;
-  transform: translateY(-73%);
+  left: 20%;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: beige;
+}
+
+.profile-pic {
+  position: absolute;
+  background-color: aliceblue;
+  height: 20em;
+  width: 20em;
+  right: 20%;
+  top: 30%;
 }/*# sourceMappingURL=styles.css.map */
