@@ -19,8 +19,13 @@ Text Shadow:
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "LinearBeam", sans-serif;
+  font-size: 2.5rem;
 }
 
 .landing-page {
@@ -33,63 +38,42 @@ body {
 .header {
   height: 20vh;
   position: relative;
-  line-height: 10px;
+  line-height: 1rem;
 }
 
 .header__logo-box {
   position: absolute;
-  top: 50px;
-  left: 40px;
+  top: 5rem;
+  left: 4rem;
 }
 
 .header__socials {
-  height: 40px;
+  height: 4rem;
 }
 
 a {
   text-decoration: none;
 }
 
-.pages {
+.header__ul--li--pages {
   color: #240a31;
-  letter-spacing: -2px;
+  letter-spacing: -0.2rem;
 }
 
-ul,
-.logo-box {
+.header__ul {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 4rem;
+  right: 4rem;
   display: flex;
 }
 
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.name {
-  margin-left: 10%;
-  font-size: 120px;
-  margin-top: 7%;
-  letter-spacing: -10px;
-}
-
-.sub_title {
-  font-size: 25px;
-  margin-left: 16%;
-}
-
 nav ul li {
-  vertical-align: middle;
-  list-style-type: none;
   display: inline-block;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .header__socials {
-  transform: translateY(-18px);
+  transform: translateY(-1.8rem);
 }
 
 .text-box {
@@ -101,9 +85,9 @@ nav ul li {
 .heading-primary-main {
   display: block;
   font-weight: normal;
-  font-size: 6.5em;
+  font-size: 14rem;
   color: #fe7e3f;
-  text-shadow: 10px 0 rgb(236, 229, 16), 20px 0 rgb(12, 215, 241);
+  text-shadow: 1rem 0 rgb(236, 229, 16), 2rem 0 rgb(12, 215, 241);
 }
 
 .heading-primary-sub {
@@ -111,15 +95,13 @@ nav ul li {
   position: relative;
   left: 20%;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 2.5rem;
   color: beige;
 }
 
 .profile-pic {
   position: absolute;
   background-color: aliceblue;
-  height: 20em;
-  width: 20em;
   right: 20%;
   top: 30%;
 }/*# sourceMappingURL=styles.css.map */
