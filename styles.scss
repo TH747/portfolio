@@ -34,23 +34,24 @@ body {
 .landing-page {
   height: 100vh;
   width: 100vw; //! will change with media queries
-  background: linear-gradient(to right, #62146b 70%, #fe7e3f 30%);
+  background: linear-gradient(to right, #240a31 70%, #fe7e3f 30%);
   background-position: top;
 }
 
 .header {
   height: 20vh;
   position: relative;
-  vertical-align: middle;
+  // vertical-align: middle;
+  line-height: 10px;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 40px;
 }
 
-.socials {
+.header__socials {
   height: 40px;
 }
 
@@ -96,7 +97,7 @@ nav ul li {
   padding: 10px;
 }
 
-.socials {
+.header__socials {
   transform: translateY(-18px);
 }
 
