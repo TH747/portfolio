@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "LinearBeam";
-  src: url("./assets/LinearBeam05.eot") format("eot");
-  src: url("./assets/Linebeam.ttf") format("truetype"), url("./assets/LinearBeam05.svg") format("svg"), url("./assets/LinearBeam05.woff") format("woff"), url("./assets/LinearBeam05.woff2") format("woff2");
+  font-family: "Ali";
+  src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
+  src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"), url("./assets/typography/font_Ali/Ali.svg") format("svg"), url("./assets/typography/font_Ali/Ali.woff") format("woff"), url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
 }
 /* Colours
 
@@ -24,8 +24,7 @@ html {
 }
 
 body {
-  font-family: "LinearBeam", sans-serif;
-  font-size: 2.5rem;
+  font-family: "Ali", sans-serif;
 }
 
 .landing-page {
@@ -33,6 +32,10 @@ body {
   width: 100vw;
   background: linear-gradient(to right, #000000 70%, #e8122f 30%);
   background-position: top;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {

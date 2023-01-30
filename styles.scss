@@ -1,10 +1,17 @@
 @font-face {
-  font-family: "LinearBeam";
-  src: url("./assets/LinearBeam05.eot") format("eot");
-  src: url("./assets/Linebeam.ttf") format("truetype"),
-    url("./assets/LinearBeam05.svg") format("svg"),
-    url("./assets/LinearBeam05.woff") format("woff"),
-    url("./assets/LinearBeam05.woff2") format("woff2");
+  // font-family: "LinearBeam";
+  // src: url("./assets/LinearBeam05.eot") format("eot");
+  // src: url("./assets/Linebeam.ttf") format("truetype"),
+  //   url("./assets/LinearBeam05.svg") format("svg"),
+  //   url("./assets/LinearBeam05.woff") format("woff"),
+  //   url("./assets/LinearBeam05.woff2") format("woff2");
+
+  font-family: "Ali";
+  src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
+  src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"),
+    url("./assets/typography/font_Ali/Ali.svg") format("svg"),
+    url("./assets/typography/font_Ali/Ali.woff") format("woff"),
+    url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
 }
 
 /* Colours
@@ -37,8 +44,8 @@ html {
 }
 
 body {
-  font-family: "LinearBeam", sans-serif;
-  font-size: 2.5rem;
+  font-family: "Ali", sans-serif;
+  // font-size: 1.4rem;
 }
 ///
 // Header
@@ -47,6 +54,11 @@ body {
   width: 100vw; //! will change with media queries
   background: linear-gradient(to right, $color-black 70%, $color-orange 30%);
   background-position: top;
+  // background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -143,6 +155,11 @@ nav ul li {
   right: 22%;
   top: 30%;
   height: 30rem;
+}
+
+// Description
+
+
 }
 
 //Animations
