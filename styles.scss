@@ -1,10 +1,17 @@
 @font-face {
-  font-family: "LinearBeam";
-  src: url("./assets/LinearBeam05.eot") format("eot");
-  src: url("./assets/Linebeam.ttf") format("truetype"),
-    url("./assets/LinearBeam05.svg") format("svg"),
-    url("./assets/LinearBeam05.woff") format("woff"),
-    url("./assets/LinearBeam05.woff2") format("woff2");
+  // font-family: "LinearBeam";
+  // src: url("./assets/LinearBeam05.eot") format("eot");
+  // src: url("./assets/Linebeam.ttf") format("truetype"),
+  //   url("./assets/LinearBeam05.svg") format("svg"),
+  //   url("./assets/LinearBeam05.woff") format("woff"),
+  //   url("./assets/LinearBeam05.woff2") format("woff2");
+
+  font-family: "Ali";
+  src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
+  src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"),
+    url("./assets/typography/font_Ali/Ali.svg") format("svg"),
+    url("./assets/typography/font_Ali/Ali.woff") format("woff"),
+    url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
 }
 
 /* Colours
@@ -27,7 +34,7 @@ Text Shadow:
 }
 
 body {
-  font-family: "LinearBeam", sans-serif;
+  font-family: "Ali", sans-serif;
   // font-size: 1.4rem;
 }
 ///

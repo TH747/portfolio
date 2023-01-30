@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Ali';
+  src: url(./Ali.eot);
+  src: url(./Ali.eot?#iefix) format('embedded-opentype'),
+       url(./Ali.woff2) format('woff2'),
+       url(./Ali.woff) format('woff'),
+       url(./Ali.ttf) format('truetype'),
+       url(./Ali.svg#Ali) format('svg'),
+       url(./Ali.otf) format('otf');
+}
