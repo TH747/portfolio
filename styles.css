@@ -30,7 +30,7 @@ body {
 .landing-page {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to right, #000000 70%, #e8122f 30%);
+  background: linear-gradient(to right, #000000 65%, #e8122f 35%);
   background-position: top;
 }
 
@@ -92,6 +92,7 @@ nav ul li {
   font-size: 14rem;
   color: #fff703;
   text-shadow: 1rem 0 #e8122f, 2rem 0 #0008ff;
+  margin-left: 5vw;
 }
 
 .main__heading-primary-sub {

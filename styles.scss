@@ -52,7 +52,7 @@ body {
 .landing-page {
   height: 100vh;
   width: 100vw; //! will change with media queries
-  background: linear-gradient(to right, $color-black 70%, $color-orange 30%);
+  background: linear-gradient(to right, $color-black 65%, $color-orange 35%);
   background-position: top;
   // background-attachment: fixed;
 }
@@ -118,6 +118,8 @@ nav ul li {
   font-size: 14rem;
   color: $color-accent-yellow;
   text-shadow: 1rem 0 $color-orange, 2rem 0 $color-accent-blue;
+  // position: absolute;
+  margin-left: 5vw;
 }
 
 //! Font to be changed and text shadow to be added
@@ -155,11 +157,6 @@ nav ul li {
   right: 22%;
   top: 30%;
   height: 30rem;
-}
-
-// Description
-
-
 }
 
 //Animations
