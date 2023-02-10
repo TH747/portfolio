@@ -1,15 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800;900&family=Monsieur+La+Doulaise&display=swap");
 @font-face {
   font-family: "Ali";
   src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
   src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"), url("./assets/typography/font_Ali/Ali.svg") format("svg"), url("./assets/typography/font_Ali/Ali.woff") format("woff"), url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
 }
-/* Colours
-
-
-Text Shadow: 
-  text-shadow: 10px 0 rgb(53, 236, 16), 0 1px rgb(53, 236, 16),
-    10px 0 rgb(12, 215, 241), 0 2px black;
-
+/* Neon Effect
+  text-shadow: 0 0 7px $color-orange, 0 0 10px $color-orange,
+    0 0 21px $color-orange, 0 0 42px $color-orange, 0 0 82px $color-orange,
+    0 0 92px $color-orange, 0 0 102px $color-orange, 0 0 151px $color-orange;
 */
 *,
 *::after,
@@ -24,13 +22,14 @@ html {
 }
 
 body {
-  font-family: "Ali", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
 }
 
 .landing-page {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to right, #000000 65%, #e8122f 35%);
+  background: linear-gradient(to right, #000000 70%, #e8122f 30%);
   background-position: top;
 }
 
@@ -86,35 +85,42 @@ nav ul li {
   width: 50%;
 }
 
+.main__heading-primary-intro {
+  font-family: "Monsieur La Doulaise", cursive;
+  color: #e11833;
+  font-size: 4.5rem;
+  display: inline-block;
+  transform: translate(2.2rem, 2rem);
+}
 .main__heading-primary-main {
   display: block;
   font-weight: normal;
-  font-size: 14rem;
+  font-size: 11.5rem;
+  font-family: "Ali";
   color: #fff703;
   text-shadow: 1rem 0 #e8122f, 2rem 0 #0008ff;
-  margin-left: 5vw;
+  margin-left: 8vw;
+  line-height: 0.9;
 }
-
 .main__heading-primary-sub {
   display: block;
   position: relative;
-  left: 20%;
+  margin-left: 20vw;
   font-weight: normal;
-  font-size: 2.5rem;
-  color: #fdca99;
+  font-size: 2.2rem;
+  color: #f2d9c1;
+  letter-spacing: -1.5px;
 }
-
 .main__blurb {
   width: 40vw;
   display: block;
   position: absolute;
   left: 5%;
   font-weight: normal;
-  font-size: 1.8rem;
-  color: #fdca99;
+  color: #f2d9c1;
   bottom: 10%;
 }
-.main__blurb .main__blurb--header {
+.main__blurb__blurb--header {
   color: #fff703;
 }
 

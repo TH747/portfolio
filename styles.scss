@@ -1,11 +1,4 @@
 @font-face {
-  // font-family: "LinearBeam";
-  // src: url("./assets/LinearBeam05.eot") format("eot");
-  // src: url("./assets/Linebeam.ttf") format("truetype"),
-  //   url("./assets/LinearBeam05.svg") format("svg"),
-  //   url("./assets/LinearBeam05.woff") format("woff"),
-  //   url("./assets/LinearBeam05.woff2") format("woff2");
-
   font-family: "Ali";
   src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
   src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"),
@@ -13,21 +6,22 @@
     url("./assets/typography/font_Ali/Ali.woff") format("woff"),
     url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
 }
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800;900&family=Monsieur+La+Doulaise&display=swap");
 
-/* Colours
-
-
-Text Shadow: 
-  text-shadow: 10px 0 rgb(53, 236, 16), 0 1px rgb(53, 236, 16),
-    10px 0 rgb(12, 215, 241), 0 2px black;
-
-*/
+// Colours
 
 $color-black: #000000;
 $color-orange: #e8122f;
+$color-orange-neon: #e11833;
 $color-accent-yellow: #fff703;
 $color-accent-blue: #0008ff;
-$color-beige: #fdca99;
+$color-beige: #f2d9c1;
+
+/* Neon Effect
+  text-shadow: 0 0 7px $color-orange, 0 0 10px $color-orange,
+    0 0 21px $color-orange, 0 0 42px $color-orange, 0 0 82px $color-orange,
+    0 0 92px $color-orange, 0 0 102px $color-orange, 0 0 151px $color-orange;
+*/
 
 // Boilerplate
 
@@ -44,15 +38,15 @@ html {
 }
 
 body {
-  font-family: "Ali", sans-serif;
-  // font-size: 1.4rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
 }
 ///
 // Header
 .landing-page {
   height: 100vh;
   width: 100vw; //! will change with media queries
-  background: linear-gradient(to right, $color-black 65%, $color-orange 35%);
+  background: linear-gradient(to right, $color-black 70%, $color-orange 30%);
   background-position: top;
   // background-attachment: fixed;
 }
@@ -112,39 +106,49 @@ nav ul li {
   width: 50%;
 }
 
-.main__heading-primary-main {
-  display: block;
-  font-weight: normal;
-  font-size: 14rem;
-  color: $color-accent-yellow;
-  text-shadow: 1rem 0 $color-orange, 2rem 0 $color-accent-blue;
-  // position: absolute;
-  margin-left: 5vw;
-}
-
-//! Font to be changed and text shadow to be added
-
-.main__heading-primary-sub {
-  display: block;
-  position: relative;
-  left: 20%;
-  font-weight: normal;
-  font-size: 2.5rem;
-  color: $color-beige;
-}
-
-.main__blurb {
-  .main__blurb--header {
-    color: $color-accent-yellow;
+.main {
+  &__heading-primary-intro {
+    font-family: "Monsieur La Doulaise", cursive;
+    color: $color-orange-neon;
+    // text-shadow: 0 0 7px $color-orange;
+    font-size: 4.5rem;
+    display: inline-block;
+    transform: translate(2.2rem, 2rem);
   }
-  width: 40vw;
-  display: block;
-  position: absolute;
-  left: 5%;
-  font-weight: normal;
-  font-size: 1.8rem;
-  color: $color-beige;
-  bottom: 10%;
+  &__heading-primary-main {
+    display: block;
+    font-weight: normal;
+    font-size: 11.5rem;
+    font-family: "Ali";
+    color: $color-accent-yellow;
+    text-shadow: 1rem 0 $color-orange, 2rem 0 $color-accent-blue;
+    margin-left: 8vw;
+    line-height: 0.9;
+  }
+
+  &__heading-primary-sub {
+    display: block;
+    position: relative;
+    margin-left: 20vw;
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: $color-beige;
+    letter-spacing: -1.5px;
+  }
+
+  &__blurb {
+    &__blurb--header {
+      color: $color-accent-yellow;
+    }
+    width: 40vw;
+    display: block;
+    position: absolute;
+    left: 5%;
+    font-weight: normal;
+    // font-size: 1.8rem;
+    color: $color-beige;
+    bottom: 10%;
+  }
 }
 
 //
