@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .landing-page {
@@ -41,17 +41,14 @@ a {
   height: 20vh;
   position: relative;
   line-height: 1rem;
+  font-size: 2rem;
 }
 
 .header__logo-box {
   position: absolute;
   top: 6rem;
-  left: 8rem;
+  margin-left: 8rem;
   color: #fff703;
-}
-
-.header__socials {
-  height: 4rem;
 }
 
 a {
@@ -59,7 +56,6 @@ a {
 }
 
 .header__ul--li--pages {
-  font-family: Arial, Helvetica, sans-serif;
   color: #000000;
 }
 
@@ -76,7 +72,8 @@ nav ul li {
 }
 
 .header__socials {
-  transform: translateY(-1.8rem);
+  transform: translateY(-1rem);
+  height: 3rem;
 }
 
 .main__text-box {
@@ -84,13 +81,16 @@ nav ul li {
   left: 5%;
   width: 50%;
 }
-
+.main__heading-primary {
+  margin-left: 5vw;
+}
 .main__heading-primary-intro {
   font-family: "Monsieur La Doulaise", cursive;
   color: #e11833;
   font-size: 4.5rem;
   display: inline-block;
   transform: translate(2.2rem, 2rem);
+  font-weight: bolder;
 }
 .main__heading-primary-main {
   display: block;
@@ -105,29 +105,28 @@ nav ul li {
 .main__heading-primary-sub {
   display: block;
   position: relative;
-  margin-left: 20vw;
+  margin-left: 15vw;
   font-weight: normal;
-  font-size: 2.2rem;
+  font-size: 4.2rem;
   color: #f2d9c1;
-  letter-spacing: -1.5px;
+  font-family: "Monsieur La Doulaise";
+  line-height: 4.8rem;
 }
 .main__blurb {
-  width: 40vw;
+  width: 30vw;
   display: block;
   position: absolute;
-  left: 5%;
   font-weight: normal;
   color: #f2d9c1;
-  bottom: 10%;
-}
-.main__blurb__blurb--header {
-  color: #fff703;
+  bottom: 6%;
+  margin-left: 8rem;
 }
 
 .main__profile-pic {
   position: absolute;
   background-color: aliceblue;
-  right: 22%;
+  right: 20%;
   top: 30%;
-  height: 30rem;
+  height: 40vh;
+  width: 20vw;
 }/*# sourceMappingURL=styles.css.map */

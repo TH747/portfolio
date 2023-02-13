@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 ///
 // Header
@@ -51,6 +51,10 @@ body {
   // background-attachment: fixed;
 }
 
+// Margin
+// Left: 8rem
+// Right: 8 rem
+
 a {
   text-decoration: none;
 }
@@ -59,17 +63,16 @@ a {
   height: 20vh;
   position: relative;
   line-height: 1rem;
+  font-size: 2rem;
 }
 
 .header__logo-box {
   position: absolute;
   top: 6rem;
-  left: 8rem;
+  margin-left: 8rem;
   color: $color-accent-yellow;
-}
-
-.header__socials {
-  height: 4rem;
+  //   text-shadow: 0.25rem 0 $color-orange, 0.5rem 0 $color-accent-blue;
+  //
 }
 
 a {
@@ -77,9 +80,7 @@ a {
 }
 
 .header__ul--li--pages {
-  font-family: Arial, Helvetica, sans-serif;
   color: $color-black;
-  // letter-spacing: -0.2rem;
 }
 
 .header__ul {
@@ -95,59 +96,60 @@ nav ul li {
 }
 
 .header__socials {
-  transform: translateY(-1.8rem);
+  transform: translateY(-1rem);
+  height: 3rem;
 }
 
 ///
 // Main-heading
-.main__text-box {
-  position: absolute;
-  left: 5%;
-  width: 50%;
-}
 
 .main {
-  &__heading-primary-intro {
-    font-family: "Monsieur La Doulaise", cursive;
-    color: $color-orange-neon;
-    // text-shadow: 0 0 7px $color-orange;
-    font-size: 4.5rem;
-    display: inline-block;
-    transform: translate(2.2rem, 2rem);
+  &__text-box {
+    position: absolute;
+    left: 5%;
+    width: 50%;
   }
-  &__heading-primary-main {
-    display: block;
-    font-weight: normal;
-    font-size: 11.5rem;
-    font-family: "Ali";
-    color: $color-accent-yellow;
-    text-shadow: 1rem 0 $color-orange, 2rem 0 $color-accent-blue;
-    margin-left: 8vw;
-    line-height: 0.9;
-  }
-
-  &__heading-primary-sub {
-    display: block;
-    position: relative;
-    margin-left: 20vw;
-    font-weight: normal;
-    font-size: 2.2rem;
-    color: $color-beige;
-    letter-spacing: -1.5px;
+  &__heading-primary {
+    margin-left: 5vw;
+    &-intro {
+      font-family: "Monsieur La Doulaise", cursive;
+      color: $color-orange-neon;
+      // text-shadow: 0 0 7px $color-orange;
+      font-size: 4.5rem;
+      display: inline-block;
+      transform: translate(2.2rem, 2rem);
+      font-weight: bolder;
+    }
+    &-main {
+      display: block;
+      font-weight: normal;
+      font-size: 11.5rem;
+      font-family: "Ali";
+      color: $color-accent-yellow;
+      text-shadow: 1rem 0 $color-orange, 2rem 0 $color-accent-blue;
+      margin-left: 8vw;
+      line-height: 0.9;
+    }
+    &-sub {
+      display: block;
+      position: relative;
+      margin-left: 15vw;
+      font-weight: normal;
+      font-size: 4.2rem;
+      color: $color-beige;
+      font-family: "Monsieur La Doulaise";
+      line-height: 4.8rem;
+    }
   }
 
   &__blurb {
-    &__blurb--header {
-      color: $color-accent-yellow;
-    }
-    width: 40vw;
+    width: 30vw;
     display: block;
     position: absolute;
-    left: 5%;
     font-weight: normal;
-    // font-size: 1.8rem;
     color: $color-beige;
-    bottom: 10%;
+    bottom: 6%;
+    margin-left: 8rem;
   }
 }
 
@@ -158,9 +160,10 @@ nav ul li {
 .main__profile-pic {
   position: absolute;
   background-color: aliceblue;
-  right: 22%;
+  right: 20%;
   top: 30%;
-  height: 30rem;
+  height: 40vh;
+  width: 20vw;
 }
 
 //Animations
