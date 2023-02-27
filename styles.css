@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800;900&family=Monsieur+La+Doulaise&display=swap");
-@font-face {
-  font-family: "Ali";
-  src: url("./assets/typography/font_Ali/Ali.eot") format("eot");
-  src: url("./assets/typography/font_Ali/Ali.ttf") format("truetype"), url("./assets/typography/font_Ali/Ali.svg") format("svg"), url("./assets/typography/font_Ali/Ali.woff") format("woff"), url("./assets/typography/font_Ali/Ali.woff2") format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800;900&family=Monsieur+La+Doulaise&family=Sigmar+One&display=swap");
 /* Neon Effect
   text-shadow: 0 0 7px $color-orange, 0 0 10px $color-orange,
     0 0 21px $color-orange, 0 0 42px $color-orange, 0 0 82px $color-orange,
@@ -23,7 +18,7 @@ html {
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .landing-page {
@@ -41,7 +36,7 @@ a {
   height: 20vh;
   position: relative;
   line-height: 1rem;
-  font-size: 2rem;
+  font-family: "Sigmar One", cursive;
 }
 
 .header__logo-box {
@@ -49,6 +44,7 @@ a {
   top: 6rem;
   margin-left: 8rem;
   color: #fff703;
+  font-family: "Sigmar One", cursive;
 }
 
 a {
@@ -87,20 +83,20 @@ nav ul li {
 .main__heading-primary-intro {
   font-family: "Monsieur La Doulaise", cursive;
   color: #e11833;
-  font-size: 4.5rem;
+  text-shadow: 0 0 7px #e8122f;
+  font-size: 4.7rem;
   display: inline-block;
   transform: translate(2.2rem, 2rem);
-  font-weight: bolder;
 }
 .main__heading-primary-main {
   display: block;
   font-weight: normal;
   font-size: 11.5rem;
-  font-family: "Ali";
+  font-family: "Sigmar One", cursive;
   color: #fff703;
-  text-shadow: 1rem 0 #e8122f, 2rem 0 #0008ff;
-  margin-left: 8vw;
-  line-height: 0.9;
+  margin-left: 4vw;
+  line-height: 0.82;
+  letter-spacing: -5px;
 }
 .main__heading-primary-sub {
   display: block;
